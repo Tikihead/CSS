@@ -1,0 +1,75 @@
+
+.btn-drk-02 {
+    background-color: #222722;   
+    background-image:         linear-gradient(hsla(0,0%,100%,.15), hsla(0,0%,0%,0));
+    border: 1px solid #111;
+    color: orange; /*#c6c6c6; */
+    cursor: pointer;
+    display: inline-block;
+    font: bold 14px/10px sans-serif;
+    margin: 20px;
+    padding: 10px 15px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px hsla(0,0%,0%,.8);   
+    border-radius: 3px;   
+    box-shadow: 0 1px 4px hsla(0,0%,0%,.4),
+          inset 0 1px 0 hsla(0,0%,100%,.2);
+}
+/* hover, then focus, then active */
+.btn-drk-02:hover {
+  color: lime;
+}
+.btn-drk-02:hover,
+.btn-drk-02:focus {
+    background-color: #242424;   
+    box-shadow: 0 1px 4px hsla(0,0%,0%,.4),
+          inset 0 1px 0 hsla(0,0%,100%,.2);
+}
+.btn-drk-02:after {   
+    background-image: linear-gradient(left, hsla(0,0%,0%,0), hsla(0,0%,100%,.8), hsla(0,0%,0%,0));
+    background-position: 50% 0%;
+    background-size: 200% 200%;
+    content: '';
+    display: none;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+   color: orange;
+}
+.btn-drk-02:hover:after,
+.btn-drk-02:focus:after {
+    display: block;
+   
+}
+.btn-drk-02:before {
+    background: #363636;
+    bottom: -8px;
+    content: '';
+    left: -8px;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    z-index: -1;   
+     border-radius: 6px;   
+     box-shadow: 0 1px 1px hsla(0,0%,100%,.3),
+             inset 0 1px 1px hsla(0,0%,0%,.4),
+               inset 0 0 5px hsla(0,0%,0%,.2);
+}
+.btn-drk-02:active {
+    background-color: #202020;
+    color: cyan; /* #b6b6b6; */
+    padding: 11px 15px 9px;  
+    box-shadow: 0 1px 0 hsla(0,0%,100%,.1),
+          inset 0 1px 4px hsla(0,0%,0%,.8);
+}
+.btn-drk-02:active:after {
+    display: block;
+    left: 1px;
+    opacity: .5;
+    right: 1px;
+    top: 31px;
+    color: orange;
+}
